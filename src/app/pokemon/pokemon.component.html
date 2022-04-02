@@ -1,39 +1,9 @@
-<p>pokemon works!</p>
 <h1>App pokemon</h1>
-
-    <div class="row">
-        <h3>Mis Pokemon</h3>
-        <div class="col">
-            <ul>
-            <li *ngFor="let pokemon of listaPokemon">
-                {{pokemon.nombre}} -- {{pokemon.pc}}</li>
-            </ul>
-        </div>
-        
-        <div class="col">
-            <h3>Agregar <small>{{nuevo.nombre}}</small></h3>
-            <hr>
-            <form>
-                <input
-                type="text"
-                placeholder="Pokemon"
-                name="nombre"
-                [(ngModel)]="nuevo.nombre"
-                >
-                <input
-                type="text"
-                placeholder="pc"
-                name="pc"
-                [(ngModel)]="nuevo.pc"
-                >
-                <button type="submit" (click)="agregar()">Agregar</button>
-
-
-
-            </form>
-            <!-- <ul>
-            <li *ngFor="let pokemon of listaPokemon">
-                {{pokemon.nombre}} -- {{pokemon.pc}}</li>
-            </ul> -->
-        </div>
-</div>
+<div class="row">
+    <div class="col">
+     <!--    <app-lista [listaPokemon]="listaPokemon"></app-lista> -->
+     <app-lista></app-lista>
+    </div>
+    <div class="col">
+        <app-agregar></app-agregar>
+    </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Pokemon } from './pokemon';
+//import { Pokemon } from './pokemon';
+//import { PokemonService } from './pokemon.service';
 
 @Component({
   selector: 'app-pokemon',
@@ -7,35 +8,17 @@ import { Pokemon } from './pokemon';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent {
-  nuevo = {
-    nombre: '',
-    pc:0
-  }
+   //constructor(private servicioPokemon:PokemonService) {
 
 
-  listaPokemon: Pokemon[] = [{
-
-    nombre: 'charmander',
-    pc: 500
-  }, {
-    nombre: 'Bulbasor',
-    pc: 600
-  }, {
-    nombre: 'Squirtle',
-    pc: 800
-  }]
-  agregar(){
-    this.listaPokemon.push(this.nuevo);
-    this.nuevo={
-      nombre:'',
-      pc:0
 
     }
-    console.log(this.listaPokemon)
-  }
-  
-  constructor() { }
-}
+  /*nuevo = {
+    nombre: '',
+    pc: 0
+  }*/
+ 
+
 
 
 
